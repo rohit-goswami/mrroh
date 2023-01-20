@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Posts on mr-roh</title>
+    <link>rohitgoswami.in/posts/</link>
+    <description>Recent content in Posts on mr-roh</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 14 Jan 2023 16:09:02 +0530</lastBuildDate><atom:link href="rohitgoswami.in/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>First</title>
+      <link>rohitgoswami.in/posts/first/</link>
+      <pubDate>Sat, 14 Jan 2023 16:09:02 +0530</pubDate>
+      
+      <guid>rohitgoswami.in/posts/first/</guid>
+      <description>Hello World! this is mr-roh :) </description>
+    </item>
+    
+    <item>
+      <title>second post</title>
+      <link>rohitgoswami.in/posts/second/</link>
+      <pubDate>Sat, 14 Jan 2023 16:09:02 +0530</pubDate>
+      
+      <guid>rohitgoswami.in/posts/second/</guid>
+      <description>Hello World! this is mr-roh :) </description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,7 +1,9 @@
-baseURL: https://rohit-goswami.github.io/mr-roh/
+baseURL: rohitgoswami.in
 languageCode: en-us
 title: mr-roh
 theme: PaperMod
+
+publishDir: docs
 
 
 params:
