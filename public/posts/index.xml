@@ -2,26 +2,26 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Posts on mr-roh</title>
-    <link>https://rohit-goswami.github.io/mr-roh/posts/</link>
+    <link>https://rohitgoswami.in/posts/</link>
     <description>Recent content in Posts on mr-roh</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 14 Jan 2023 16:09:02 +0530</lastBuildDate><atom:link href="https://rohit-goswami.github.io/mr-roh/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 14 Jan 2023 16:09:02 +0530</lastBuildDate><atom:link href="https://rohitgoswami.in/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>First</title>
-      <link>https://rohit-goswami.github.io/mr-roh/posts/first/</link>
+      <link>https://rohitgoswami.in/posts/first/</link>
       <pubDate>Sat, 14 Jan 2023 16:09:02 +0530</pubDate>
       
-      <guid>https://rohit-goswami.github.io/mr-roh/posts/first/</guid>
+      <guid>https://rohitgoswami.in/posts/first/</guid>
       <description>Hello World! this is mr-roh :) </description>
     </item>
     
     <item>
       <title>second post</title>
-      <link>https://rohit-goswami.github.io/mr-roh/posts/second/</link>
+      <link>https://rohitgoswami.in/posts/second/</link>
       <pubDate>Sat, 14 Jan 2023 16:09:02 +0530</pubDate>
       
-      <guid>https://rohit-goswami.github.io/mr-roh/posts/second/</guid>
+      <guid>https://rohitgoswami.in/posts/second/</guid>
       <description>Hello World! this is mr-roh :) </description>
     </item>
     
