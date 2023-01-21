@@ -8,12 +8,10 @@ cover:
     caption: 'walking down streets of EVM opcode secrets'
 tags: ["Ethereum", "EVM"]
 categories: ["tech"]
-description: "In this series of blog posts, I am going to share my approach and learning while solving EVM puzzles."
+description: "As part of this series of posts, I will share my approach to solving EVM puzzles as well as my learnings from the process."
 ---
 
-Understanding EVM opcodes in gamified way!. If you are learning about Ethereum and Blockchain then understanding **EVM (Ethereum Virtual Machine)** will benefit you the most. Recently been solving EVM puzzles and believe me it helped me a lot to understand the basics of EVM and opcodes.
-
-In this series of blog posts, I am going to share my approach and learning while solving EVM puzzles.
+Understanding EVM opcodes in gamified way!. To fully understand Ethereum you must understand **EVM (Ethereum Virtual Machine)**. I have recently been solving EVM puzzles, which have helped me gain a better understanding of EVM and opcodes. There are 3 puzzle series so far that I had found on the internet
 
 Puzzles: 
 * [By fvictorio](https://github.com/fvictorio/evm-puzzles)
