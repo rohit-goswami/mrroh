@@ -8,8 +8,9 @@ publishDir: docs
 
 params:
   homeInfoParams:
-    Title: "Hello Stranger"
-    Content: Welcome to my blog. Here you'll find a lot of cool information about a lot of cool stuff.
+    Title: Hi there!
+    Content: Welcome to mr-roh's blog.
+
   socialIcons:
     - name: twitter
       url: "https://twitter.com/mrroh_in"
