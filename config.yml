@@ -5,6 +5,24 @@ theme: PaperMod
 
 publishDir: docs
 
+params:
+    profileMode:
+        enabled: true
+        title: "<Title>" # optional default will be site title
+        subtitle: "Just getting started!"
+        imageUrl: "https://avatars.githubusercontent.com/u/15854015?s=400&u=495bac6c286a88cdeda9afb7794bef4ecee4fb9f&v=4" # optional
+        imageTitle: "mr-roh" # optional
+        imageWidth: 120 # custom size
+        imageHeight: 120 # custom size
+        buttons:
+            - name: Archive
+              url: "/archive"
+            - name: Github
+              url: "https://github.com/rohit-goswami"
+
+    socialIcons: # optional
+        - name: twitter
+          url: "https://twitter.com/mrroh_in"
 
 params:
   homeInfoParams:

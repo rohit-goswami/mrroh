@@ -1,5 +1,5 @@
 ---
-title: "First"
+title: "EVM Puzzles Writeups"
 date: 2023-01-14T16:09:02+05:30
 draft: false
 cover:
@@ -8,11 +8,10 @@ cover:
     caption: 'walking down streets of EVM opcode secrets'
 tags: ["Ethereum", "EVM"]
 categories: ["tech"]
+description: "In this series of blog posts, I am going to share my approach and learning while solving EVM puzzles."
 ---
 
-# EVM Puzzles Series
-
-Understanding EVM opcodes in gamified way!
+Understanding EVM opcodes in gamified way!. If you are learning about Ethereum and Blockchain then understanding **EVM (Ethereum Virtual Machine)** will benefit you the most. Recently been solving EVM puzzles and believe me it helped me a lot to understand the basics of EVM and opcodes.
 
 In this series of blog posts, I am going to share my approach and learning while solving EVM puzzles.
 
@@ -25,7 +24,7 @@ WAGMI! Let's get started.
 
 
 ## Puzzle 1
-```json
+```yaml
 00      34      CALLVALUE
 01      56      JUMP
 02      FD      REVERT
@@ -40,9 +39,9 @@ WAGMI! Let's get started.
 <details>
     <summary><span style="color:red">Reveal Solution</span></summary>
  
-Our end goal is to provide right callvalue which is in wei to make the JUMP execution jump to JUMPDEST. notice the offset for jumpdest is 8. therefore we can pass 8 as callvalue and yay! you solve it. 
+Our end goal is to provide right callvalue to make the correct execution of JUMP code and next instruction set should start from JUMPDEST. Note the offset for jumpdest is 8. therefore we can pass 8 as callvalue and woof! puzzle solved.
 
-:sunglasses: :checkered_flag:
+
 
 ![](https://i.imgur.com/kG6OjxD.png)
 
