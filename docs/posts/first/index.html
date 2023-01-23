@@ -99,8 +99,8 @@
   "keywords": [
     "Ethereum", "EVM"
   ],
-  "articleBody": "Understanding EVM opcodes in gamified way!. To fully understand Ethereum you must understand EVM (Ethereum Virtual Machine). I have recently been solving EVM puzzles, which have helped me gain a better understanding of EVM and opcodes. There are 3 puzzle series so far that I had found on the internet\nPuzzles:\nBy fvictorio By daltboy By mattaereal WAGMI! Let’s get started.\nPuzzle 1 00 34 CALLVALUE 01 56 JUMP 02 FD REVERT 03 FD REVERT 04 FD REVERT 05 FD REVERT 06 FD REVERT 07 FD REVERT 08 5B JUMPDEST 09 00 STOP Our end goal is to provide right callvalue to make the correct execution of JUMP code and next instruction set should start from JUMPDEST. Note the offset for jumpdest is 8. therefore we can pass 8 as callvalue and woof! puzzle solved.\nMore puzzles writeups will share soon! :) ",
-  "wordCount" : "142",
+  "articleBody": "Understanding EVM opcodes in gamified way!. To fully understand Ethereum you must understand EVM (Ethereum Virtual Machine). I have recently been solving EVM puzzles, which have helped me gain a better understanding of EVM and opcodes. There are 3 puzzle series so far that I had found on the internet\nPuzzles:\nBy fvictorio By daltboy By mattaereal WAGMI! Let’s get started. For better understanding of these puzzles, I would recommend you to read EVM deep dives series by noxx, that series will help you to understand EVM in depth.\nPuzzle 1 00 34 CALLVALUE 01 56 JUMP 02 FD REVERT 03 FD REVERT 04 FD REVERT 05 FD REVERT 06 FD REVERT 07 FD REVERT 08 5B JUMPDEST 09 00 STOP This weird looking series of codes are actually EVM opcodes, which represents a smart contract. Make use of EVM Playground to get more comfortable with the opcodes. This contract asking a value to be send in a transaction so that it won’t hit REVERT opcode. First you need to understand about CALLVALUE opcode. In short this opcode gets value of the current call in wei and pushes that to the top of stack. Next we have JUMP opcode which simply takes the top value on the stack and jumps to the\nMore puzzles writeups will share soon! :) ",
+  "wordCount" : "219",
   "inLanguage": "en",
   "image":"https://rohitgoswami.in/img/puzzles.png","datePublished": "2023-01-14T16:09:02+05:30",
   "dateModified": "2023-01-14T16:09:02+05:30",
@@ -194,7 +194,7 @@
 </div>
   </header> 
 <figure class="entry-cover"><img loading="lazy" src="https://rohitgoswami.in/img/puzzles.png" alt="walking down streets of EVM opcode secrets">
-        <p>walking down streets of EVM opcode secrets</p>
+        <p>walking down streets of EVM opcodes secrets</p>
 </figure>
   <div class="post-content"><p>Understanding EVM opcodes in gamified way!. To fully understand Ethereum you must understand <strong>EVM (Ethereum Virtual Machine)</strong>. I have recently been solving EVM puzzles, which have helped me gain a better understanding of EVM and opcodes. There are 3 puzzle series so far that I had found on the internet</p>
 <p>Puzzles:</p>
@@ -203,7 +203,7 @@
 <li><a href="https://github.com/daltyboy11/more-evm-puzzles">By daltboy</a></li>
 <li><a href="https://github.com/mattaereal/yet-another-evm-puzzle/">By mattaereal</a></li>
 </ul>
-<p>WAGMI! Let&rsquo;s get started.</p>
+<p>WAGMI! Let&rsquo;s get started. For better understanding of these puzzles, I would recommend you to read EVM deep dives series by noxx, that series will help you to understand EVM in depth.</p>
 <h2 id="puzzle-1">Puzzle 1<a hidden class="anchor" aria-hidden="true" href="#puzzle-1">#</a></h2>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#ae81ff">00</span>      <span style="color:#ae81ff">34</span>      <span style="color:#ae81ff">CALLVALUE</span>
 </span></span><span style="display:flex;"><span><span style="color:#ae81ff">01</span>      <span style="color:#ae81ff">56</span>      <span style="color:#ae81ff">JUMP</span>
@@ -216,7 +216,7 @@
 </span></span><span style="display:flex;"><span><span style="color:#ae81ff">08</span>      <span style="color:#ae81ff">5B      JUMPDEST</span>
 </span></span><span style="display:flex;"><span><span style="color:#ae81ff">09</span>      <span style="color:#ae81ff">00</span>      <span style="color:#ae81ff">STOP</span>
 </span></span></code></pre></div><!-- raw HTML omitted -->
-<p>Our end goal is to provide right callvalue to make the correct execution of JUMP code and next instruction set should start from JUMPDEST. Note the offset for jumpdest is 8. therefore we can pass 8 as callvalue and woof! puzzle solved.</p>
+<p>This weird looking series of codes are actually EVM opcodes, which represents a smart contract. Make use of <a href="https://www.evm.codes/playground?fork=grayGlacier&amp;unit=Wei&amp;codeType=Mnemonic&amp;code='CALLVALUEy~~~~~~yDESTzSTOP'~zREVERTz%5CnyzJUMP%01yz~_">EVM Playground</a> to get more comfortable with the opcodes. This contract asking a value to be send in a transaction so that it won&rsquo;t hit REVERT opcode. First you need to understand about <a href="https://www.evm.codes/#34?fork=grayGlacier">CALLVALUE</a> opcode. In short this opcode gets value of the current call in wei and pushes that to the top of stack. Next we have JUMP opcode which simply takes the top value on the stack and jumps to the</p>
 <p><img loading="lazy" src="https://i.imgur.com/kG6OjxD.png" alt=""  />
 </p>
 <!-- raw HTML omitted -->
@@ -236,11 +236,7 @@
     
 <footer class="footer">
     <span>&copy; 2023 <a href="https://rohitgoswami.in/">mr-roh</a></span>
-    <span>
-        Powered by
-        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
-        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
-    </span>
+    
 </footer>
 <a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">

@@ -39,7 +39,6 @@ params:
 params:
   cover:
     linkFullImages: true
-
   ShowBreadCrumbs: true
   ShowReadingTime: true
   ShowShareButtons: true
@@ -63,3 +62,16 @@ menu:
       name: Archives
       url: /archives/
       weight: 30
+
+
+footer:
+  block: minimal
+  copyright:
+    notice: '© {year} Me. This work is licensed under {license}'
+    license:
+      enable: true
+      allow_derivatives: false
+      share_alike: true
+      allow_commercial: false
+  # For multilingual sites, show a language chooser in the footer?
+  show_translations: true
