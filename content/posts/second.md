@@ -9,4 +9,4 @@ description: "Tying to understand makerdao protocol by implementing it from scra
 
 # Part I : The Core Module 
 
-Before we dive into core module I would recommend you to read the file:///C:/Users/Rohit/Downloads/Maker%20Protocol%20101_20.12.08.pdf.
+Before we dive into core module I would recommend you to read the [makerDAO 101](https://docs.makerdao.com/getting-started/maker-protocol-101)
