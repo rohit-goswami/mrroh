@@ -8,6 +8,15 @@
     <language>en-us</language>
     <lastBuildDate>Sat, 14 Jan 2023 16:09:02 +0530</lastBuildDate><atom:link href="https://rohitgoswami.in/categories/tech/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Building MakerDAO from scratch - I</title>
+      <link>https://rohitgoswami.in/posts/second/</link>
+      <pubDate>Sat, 14 Jan 2023 16:09:02 +0530</pubDate>
+      
+      <guid>https://rohitgoswami.in/posts/second/</guid>
+      <description>Tying to understand makerdao protocol by implementing it from scratch.</description>
+    </item>
+    
+    <item>
       <title>EVM Puzzles Writeups</title>
       <link>https://rohitgoswami.in/posts/first/</link>
       <pubDate>Sat, 14 Jan 2023 16:09:02 +0530</pubDate>

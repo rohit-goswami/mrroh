@@ -2,7 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://rohitgoswami.in/categories/blockchain/</loc>
+    <lastmod>2023-01-14T16:09:02+05:30</lastmod>
+  </url><url>
+    <loc>https://rohitgoswami.in/posts/second/</loc>
+    <lastmod>2023-01-14T16:09:02+05:30</lastmod>
+  </url><url>
     <loc>https://rohitgoswami.in/categories/</loc>
+    <lastmod>2023-01-14T16:09:02+05:30</lastmod>
+  </url><url>
+    <loc>https://rohitgoswami.in/tags/defi/</loc>
     <lastmod>2023-01-14T16:09:02+05:30</lastmod>
   </url><url>
     <loc>https://rohitgoswami.in/tags/ethereum/</loc>
@@ -14,10 +23,10 @@
     <loc>https://rohitgoswami.in/posts/first/</loc>
     <lastmod>2023-01-14T16:09:02+05:30</lastmod>
   </url><url>
-    <loc>https://rohitgoswami.in/posts/</loc>
+    <loc>https://rohitgoswami.in/tags/makerdao/</loc>
     <lastmod>2023-01-14T16:09:02+05:30</lastmod>
   </url><url>
-    <loc>https://rohitgoswami.in/posts/second/</loc>
+    <loc>https://rohitgoswami.in/posts/</loc>
     <lastmod>2023-01-14T16:09:02+05:30</lastmod>
   </url><url>
     <loc>https://rohitgoswami.in/tags/</loc>
