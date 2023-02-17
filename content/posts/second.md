@@ -13,4 +13,4 @@ description: "Trying to understand makerdao protocol by implementing it from scr
 
 # Part I : The Core Module 
 
-Before we dive into core module I would recommend you to read the [makerDAO 101](https://docs.makerdao.com/getting-started/maker-protocol-101)
+Before we dive into core module, I would recommend you to read the [makerDAO 101](https://docs.makerdao.com/getting-started/maker-protocol-101)
