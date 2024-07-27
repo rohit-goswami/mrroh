@@ -1,8 +1,8 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
   <channel>
-    <title>Tech - Category - mr-roh</title>
+    <title>Tech - Category - MrUnomi</title>
     <link>http://localhost:1313/categories/tech/</link>
-    <description>Tech - Category | mr-roh</description>
+    <description>Tech - Category | MrUnomi</description>
     <generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sat, 14 Jan 2023 16:09:02 &#43;0530</lastBuildDate><atom:link href="http://localhost:1313/categories/tech/" rel="self" type="application/rss+xml" /><item>
   <title>Building MakerDAO from scratch - I</title>
   <link>http://localhost:1313/posts/second/</link>
