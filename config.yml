@@ -1,6 +1,6 @@
 baseURL: "https://rohitgoswami.in/"
 languageCode: en-us
-title: mr-roh
+title: MrUnomi
 theme: FixIt
 
 publishDir: docs
