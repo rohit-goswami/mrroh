@@ -1,30 +1,27 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
   <channel>
     <title>mr-roh</title>
-    <link>https://rohitgoswami.in/</link>
-    <description>Recent content on mr-roh</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Sat, 14 Jan 2023 16:09:02 +0530</lastBuildDate><atom:link href="https://rohitgoswami.in/index.xml" rel="self" type="application/rss+xml" />
+    <link>http://localhost:1313/</link>
+    <description>mr-roh</description>
+    <generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sat, 14 Jan 2023 16:09:02 &#43;0530</lastBuildDate>
+      <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Building MakerDAO from scratch - I</title>
-      <link>https://rohitgoswami.in/posts/second/</link>
-      <pubDate>Sat, 14 Jan 2023 16:09:02 +0530</pubDate>
-      
-      <guid>https://rohitgoswami.in/posts/second/</guid>
-      <description>Trying to understand makerdao protocol by implementing it from scratch.</description>
-    </item>
-    
-    <item>
-      <title>EVM Puzzles Writeups</title>
-      <link>https://rohitgoswami.in/posts/first/</link>
-      <pubDate>Sat, 14 Jan 2023 16:09:02 +0530</pubDate>
-      
-      <guid>https://rohitgoswami.in/posts/first/</guid>
-      <description>As part of this series of posts, I will share my approach to solving EVM puzzles as well as my learnings from the process.</description>
-    </item>
-    
-    
-  </channel>
+  <title>Building MakerDAO from scratch - I</title>
+  <link>http://localhost:1313/posts/second/</link>
+  <pubDate>Sat, 14 Jan 2023 16:09:02 &#43;0530</pubDate>
+  <author>Author</author>
+  <guid>http://localhost:1313/posts/second/</guid>
+  <description><![CDATA[Part I : The Core ModuleBefore we dive into core module, I would recommend you to read the makerDAO 101]]></description>
+</item>
+<item>
+  <title>EVM Puzzles Writeups</title>
+  <link>http://localhost:1313/posts/first/</link>
+  <pubDate>Sat, 14 Jan 2023 16:09:02 &#43;0530</pubDate>
+  <author>Author</author>
+  <guid>http://localhost:1313/posts/first/</guid>
+  <description><![CDATA[Understanding EVM opcodes in gamified way!. To fully understand Ethereum you must understand EVM (Ethereum Virtual Machine). I have recently been solving EVM puzzles, which have helped me gain a better understanding of EVM and opcodes. There are 3 puzzle series so far that I had found on the internet
+Puzzles:
+By fvictorio By daltboy By mattaereal WAGMI! Let&rsquo;s get started. For better understanding of these puzzles, I would recommend you to read EVM deep dives series by noxx, that series will help you to understand EVM in depth.]]></description>
+</item>
+</channel>
 </rss>

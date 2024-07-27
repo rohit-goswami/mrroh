@@ -1,47 +1,39 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
   <channel>
-    <title>Tags on mr-roh</title>
-    <link>https://rohitgoswami.in/tags/</link>
-    <description>Recent content in Tags on mr-roh</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Sat, 14 Jan 2023 16:09:02 +0530</lastBuildDate><atom:link href="https://rohitgoswami.in/tags/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>DeFi</title>
-      <link>https://rohitgoswami.in/tags/defi/</link>
-      <pubDate>Sat, 14 Jan 2023 16:09:02 +0530</pubDate>
-      
-      <guid>https://rohitgoswami.in/tags/defi/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Ethereum</title>
-      <link>https://rohitgoswami.in/tags/ethereum/</link>
-      <pubDate>Sat, 14 Jan 2023 16:09:02 +0530</pubDate>
-      
-      <guid>https://rohitgoswami.in/tags/ethereum/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>EVM</title>
-      <link>https://rohitgoswami.in/tags/evm/</link>
-      <pubDate>Sat, 14 Jan 2023 16:09:02 +0530</pubDate>
-      
-      <guid>https://rohitgoswami.in/tags/evm/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>MakerDAO</title>
-      <link>https://rohitgoswami.in/tags/makerdao/</link>
-      <pubDate>Sat, 14 Jan 2023 16:09:02 +0530</pubDate>
-      
-      <guid>https://rohitgoswami.in/tags/makerdao/</guid>
-      <description></description>
-    </item>
-    
-  </channel>
+    <title>Tags - Tag - mr-roh</title>
+    <link>http://localhost:1313/tags/</link>
+    <description>Tags - Tag | mr-roh</description>
+    <generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sat, 14 Jan 2023 16:09:02 &#43;0530</lastBuildDate><atom:link href="http://localhost:1313/tags/" rel="self" type="application/rss+xml" /><item>
+  <title>DeFi</title>
+  <link>http://localhost:1313/tags/defi/</link>
+  <pubDate>Sat, 14 Jan 2023 16:09:02 &#43;0530</pubDate>
+  <author>Author</author>
+  <guid>http://localhost:1313/tags/defi/</guid>
+  <description><![CDATA[]]></description>
+</item>
+<item>
+  <title>Ethereum</title>
+  <link>http://localhost:1313/tags/ethereum/</link>
+  <pubDate>Sat, 14 Jan 2023 16:09:02 &#43;0530</pubDate>
+  <author>Author</author>
+  <guid>http://localhost:1313/tags/ethereum/</guid>
+  <description><![CDATA[]]></description>
+</item>
+<item>
+  <title>EVM</title>
+  <link>http://localhost:1313/tags/evm/</link>
+  <pubDate>Sat, 14 Jan 2023 16:09:02 &#43;0530</pubDate>
+  <author>Author</author>
+  <guid>http://localhost:1313/tags/evm/</guid>
+  <description><![CDATA[]]></description>
+</item>
+<item>
+  <title>MakerDAO</title>
+  <link>http://localhost:1313/tags/makerdao/</link>
+  <pubDate>Sat, 14 Jan 2023 16:09:02 &#43;0530</pubDate>
+  <author>Author</author>
+  <guid>http://localhost:1313/tags/makerdao/</guid>
+  <description><![CDATA[]]></description>
+</item>
+</channel>
 </rss>

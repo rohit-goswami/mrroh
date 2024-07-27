@@ -1,7 +1,7 @@
 baseURL: "https://rohitgoswami.in/"
 languageCode: en-us
 title: mr-roh
-theme: PaperMod
+theme: FixIt
 
 publishDir: docs
 
