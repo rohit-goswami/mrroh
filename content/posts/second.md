@@ -4,7 +4,7 @@ date: 2024-07-29
 draft: false
 author: mr-unomi
 cover:
-    image: img/Cover2.png
+    image: img/Cover2.jpg
     alt: ''
     caption: ''
 tags: ["Verified Credentials", "DID"]
