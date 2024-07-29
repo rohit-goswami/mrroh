@@ -1,22 +1,23 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
   <channel>
     <title>All Posts - MrUnomi</title>
-    <link>http://localhost:1313/posts/</link>
+    <link>https://rohitgoswami.in/posts/</link>
     <description>All Posts | MrUnomi</description>
-    <generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sat, 14 Jan 2023 16:09:02 &#43;0530</lastBuildDate><atom:link href="http://localhost:1313/posts/" rel="self" type="application/rss+xml" /><item>
-  <title>Building MakerDAO from scratch - I</title>
-  <link>http://localhost:1313/posts/second/</link>
-  <pubDate>Sat, 14 Jan 2023 16:09:02 &#43;0530</pubDate>
+    <generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 29 Jul 2024 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://rohitgoswami.in/posts/" rel="self" type="application/rss+xml" /><item>
+  <title>Verified Credentials are here</title>
+  <link>https://rohitgoswami.in/posts/second/</link>
+  <pubDate>Mon, 29 Jul 2024 00:00:00 &#43;0000</pubDate>
   <author>Author</author>
-  <guid>http://localhost:1313/posts/second/</guid>
-  <description><![CDATA[Part I : The Core ModuleBefore we dive into core module, I would recommend you to read the makerDAO 101]]></description>
+  <guid>https://rohitgoswami.in/posts/second/</guid>
+  <description><![CDATA[Why Verified Credentials MatterImagine you&rsquo;re at a party, and someone says they know the DJ personally. Do you believe them? Now imagine that same scenario, but the DJ nods in agreement. That&rsquo;s the power of verified credentials, folks – turning party talk into verified truth.
+What Are Verified Credentials, Anyway?In plain English, verified credentials are like your digital badges of honor, authenticated by someone trustworthy. They tell the world you&rsquo;re the real deal without making you flash your ID every five seconds.]]></description>
 </item>
 <item>
   <title>EVM Puzzles Writeups</title>
-  <link>http://localhost:1313/posts/first/</link>
+  <link>https://rohitgoswami.in/posts/first/</link>
   <pubDate>Sat, 14 Jan 2023 16:09:02 &#43;0530</pubDate>
   <author>Author</author>
-  <guid>http://localhost:1313/posts/first/</guid>
+  <guid>https://rohitgoswami.in/posts/first/</guid>
   <description><![CDATA[Understanding EVM opcodes in gamified way!. To fully understand Ethereum you must understand EVM (Ethereum Virtual Machine). I have recently been solving EVM puzzles, which have helped me gain a better understanding of EVM and opcodes. There are 3 puzzle series so far that I had found on the internet
 Puzzles:
 By fvictorio By daltboy By mattaereal WAGMI! Let&rsquo;s get started. For better understanding of these puzzles, I would recommend you to read EVM deep dives series by noxx, that series will help you to understand EVM in depth.]]></description>

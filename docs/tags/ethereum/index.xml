@@ -1,22 +1,14 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
   <channel>
     <title>Ethereum - Tag - MrUnomi</title>
-    <link>http://localhost:1313/tags/ethereum/</link>
+    <link>https://rohitgoswami.in/tags/ethereum/</link>
     <description>Ethereum - Tag | MrUnomi</description>
-    <generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sat, 14 Jan 2023 16:09:02 &#43;0530</lastBuildDate><atom:link href="http://localhost:1313/tags/ethereum/" rel="self" type="application/rss+xml" /><item>
-  <title>Building MakerDAO from scratch - I</title>
-  <link>http://localhost:1313/posts/second/</link>
-  <pubDate>Sat, 14 Jan 2023 16:09:02 &#43;0530</pubDate>
-  <author>Author</author>
-  <guid>http://localhost:1313/posts/second/</guid>
-  <description><![CDATA[Part I : The Core ModuleBefore we dive into core module, I would recommend you to read the makerDAO 101]]></description>
-</item>
-<item>
+    <generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sat, 14 Jan 2023 16:09:02 &#43;0530</lastBuildDate><atom:link href="https://rohitgoswami.in/tags/ethereum/" rel="self" type="application/rss+xml" /><item>
   <title>EVM Puzzles Writeups</title>
-  <link>http://localhost:1313/posts/first/</link>
+  <link>https://rohitgoswami.in/posts/first/</link>
   <pubDate>Sat, 14 Jan 2023 16:09:02 &#43;0530</pubDate>
   <author>Author</author>
-  <guid>http://localhost:1313/posts/first/</guid>
+  <guid>https://rohitgoswami.in/posts/first/</guid>
   <description><![CDATA[Understanding EVM opcodes in gamified way!. To fully understand Ethereum you must understand EVM (Ethereum Virtual Machine). I have recently been solving EVM puzzles, which have helped me gain a better understanding of EVM and opcodes. There are 3 puzzle series so far that I had found on the internet
 Puzzles:
 By fvictorio By daltboy By mattaereal WAGMI! Let&rsquo;s get started. For better understanding of these puzzles, I would recommend you to read EVM deep dives series by noxx, that series will help you to understand EVM in depth.]]></description>

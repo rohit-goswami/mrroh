@@ -2,6 +2,7 @@
 title: "EVM Puzzles Writeups"
 date: 2023-01-14T16:09:02+05:30
 draft: false
+author: mr-unomi
 cover:
     image: img/puzzles.png
     alt: 'walking down streets of EVM opcode secrets'

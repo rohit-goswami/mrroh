@@ -1,38 +1,38 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
   <channel>
     <title>Tags - Tag - MrUnomi</title>
-    <link>http://localhost:1313/tags/</link>
+    <link>https://rohitgoswami.in/tags/</link>
     <description>Tags - Tag | MrUnomi</description>
-    <generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sat, 14 Jan 2023 16:09:02 &#43;0530</lastBuildDate><atom:link href="http://localhost:1313/tags/" rel="self" type="application/rss+xml" /><item>
-  <title>DeFi</title>
-  <link>http://localhost:1313/tags/defi/</link>
-  <pubDate>Sat, 14 Jan 2023 16:09:02 &#43;0530</pubDate>
+    <generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 29 Jul 2024 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://rohitgoswami.in/tags/" rel="self" type="application/rss+xml" /><item>
+  <title>DID</title>
+  <link>https://rohitgoswami.in/tags/did/</link>
+  <pubDate>Mon, 29 Jul 2024 00:00:00 &#43;0000</pubDate>
   <author>Author</author>
-  <guid>http://localhost:1313/tags/defi/</guid>
+  <guid>https://rohitgoswami.in/tags/did/</guid>
+  <description><![CDATA[]]></description>
+</item>
+<item>
+  <title>Verified Credentials</title>
+  <link>https://rohitgoswami.in/tags/verified-credentials/</link>
+  <pubDate>Mon, 29 Jul 2024 00:00:00 &#43;0000</pubDate>
+  <author>Author</author>
+  <guid>https://rohitgoswami.in/tags/verified-credentials/</guid>
   <description><![CDATA[]]></description>
 </item>
 <item>
   <title>Ethereum</title>
-  <link>http://localhost:1313/tags/ethereum/</link>
+  <link>https://rohitgoswami.in/tags/ethereum/</link>
   <pubDate>Sat, 14 Jan 2023 16:09:02 &#43;0530</pubDate>
   <author>Author</author>
-  <guid>http://localhost:1313/tags/ethereum/</guid>
+  <guid>https://rohitgoswami.in/tags/ethereum/</guid>
   <description><![CDATA[]]></description>
 </item>
 <item>
   <title>EVM</title>
-  <link>http://localhost:1313/tags/evm/</link>
+  <link>https://rohitgoswami.in/tags/evm/</link>
   <pubDate>Sat, 14 Jan 2023 16:09:02 &#43;0530</pubDate>
   <author>Author</author>
-  <guid>http://localhost:1313/tags/evm/</guid>
-  <description><![CDATA[]]></description>
-</item>
-<item>
-  <title>MakerDAO</title>
-  <link>http://localhost:1313/tags/makerdao/</link>
-  <pubDate>Sat, 14 Jan 2023 16:09:02 &#43;0530</pubDate>
-  <author>Author</author>
-  <guid>http://localhost:1313/tags/makerdao/</guid>
+  <guid>https://rohitgoswami.in/tags/evm/</guid>
   <description><![CDATA[]]></description>
 </item>
 </channel>
