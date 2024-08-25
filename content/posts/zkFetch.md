@@ -11,7 +11,7 @@ description: "zkFetch: Secure Data Fetching with Zero-Knowledge Proofs"
 
 ## Introduction
 
-zkFetch is a library that extends the functionality of a standard HTTP fetch operation by adding a zero-knowledge proof component. The main goal is to allow users to fetch data from remote resources and generate a cryptographic proof of the fetch operation and its result, without revealing sensitive information like API keys or private headers.
+[zkFetch](https://gitlab.reclaimprotocol.org/integrations/offchain/zk-fetch) is a library that extends the functionality of a standard HTTP fetch operation by adding a zero-knowledge proof component. The main goal is to allow users to fetch data from remote resources and generate a cryptographic proof of the fetch operation and its result, without revealing sensitive information like API keys or private headers.
 
 ## Core Concepts
 
@@ -38,7 +38,7 @@ Let's explore each of these in detail.
 
 The ReclaimClient is the main class that users interact with. It's initialized with an application ID and secret, which are used to authenticate with the Reclaim Protocol.
 
-```
+```typescript
 export class ReclaimClient {
   applicationId: string;
   applicationSecret: string;
@@ -73,7 +73,7 @@ The zkFetch method is the core of the library. It performs the following steps:
 
 Here's a simplified version of the method:
 
-```
+```typescript
 async zkFetch(url: string, options?: Options, secretOptions?: secretOptions, retries = 1, retryInterval = 1000) {
   // Input validation
   validateURL(url, "zkFetch");
@@ -199,7 +199,7 @@ The library includes custom error classes to provide clear and specific error me
 
 While not part of the zkFetch library itself, the verification process is a crucial part of the overall system. Verification is typically done using the Reclaim Protocol's `verifySignedProof` function:
 
-```js {.no-header}
+```typescript
 const isProofVerified = await Reclaim.verifySignedProof(proof);
 ```
 
