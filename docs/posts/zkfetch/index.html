@@ -157,7 +157,7 @@
   <a href="#introduction" class="heading-mark">
     <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
   </a>
-</h2><p>zkFetch is a library that extends the functionality of a standard HTTP fetch operation by adding a zero-knowledge proof component. The main goal is to allow users to fetch data from remote resources and generate a cryptographic proof of the fetch operation and its result, without revealing sensitive information like API keys or private headers.</p>
+</h2><p><a href="https://gitlab.reclaimprotocol.org/integrations/offchain/zk-fetch"target="_blank" rel="external nofollow noopener noreferrer">zkFetch</a> is a library that extends the functionality of a standard HTTP fetch operation by adding a zero-knowledge proof component. The main goal is to allow users to fetch data from remote resources and generate a cryptographic proof of the fetch operation and its result, without revealing sensitive information like API keys or private headers.</p>
 <h2 id="core-concepts" class="heading-element"><span>Core Concepts</span>
   <a href="#core-concepts" class="heading-mark">
     <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
@@ -189,22 +189,22 @@
     <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
   </a>
 </h3><p>The ReclaimClient is the main class that users interact with. It&rsquo;s initialized with an application ID and secret, which are used to authenticate with the Reclaim Protocol.</p>
-<pre tabindex="0"><code>export class ReclaimClient {
-  applicationId: string;
-  applicationSecret: string;
-  logs?: boolean;
-  sessionId: string;
-
-  constructor(applicationId: string, applicationSecret: string, logs?: boolean) {
-    validateApplicationIdAndSecret(applicationId, applicationSecret);
-    this.applicationId = applicationId;
-    this.applicationSecret = applicationSecret;
-    this.sessionId = v4().toString();
-    logger.level = logs ? &#34;info&#34; : &#34;silent&#34;;
-  }
-
-  // ... zkFetch method goes here
-}</code></pre><p>The constructor validates the application ID and secret, sets up logging, and generates a unique session ID for each instance.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-typescript" data-lang="typescript"><span style="display:flex;"><span><span style="color:#66d9ef">export</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">ReclaimClient</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">applicationId</span>: <span style="color:#66d9ef">string</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">applicationSecret</span>: <span style="color:#66d9ef">string</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">logs?</span>: <span style="color:#66d9ef">boolean</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">sessionId</span>: <span style="color:#66d9ef">string</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">constructor</span>(<span style="color:#a6e22e">applicationId</span>: <span style="color:#66d9ef">string</span>, <span style="color:#a6e22e">applicationSecret</span>: <span style="color:#66d9ef">string</span>, <span style="color:#a6e22e">logs?</span>: <span style="color:#66d9ef">boolean</span>) {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">validateApplicationIdAndSecret</span>(<span style="color:#a6e22e">applicationId</span>, <span style="color:#a6e22e">applicationSecret</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">applicationId</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">applicationId</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">applicationSecret</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">applicationSecret</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">sessionId</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">v4</span>().<span style="color:#a6e22e">toString</span>();
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">logger</span>.<span style="color:#a6e22e">level</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">logs</span> <span style="color:#f92672">?</span> <span style="color:#e6db74">&#34;info&#34;</span> <span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;silent&#34;</span>;
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">// ... zkFetch method goes here
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>}</span></span></code></pre></div><p>The constructor validates the application ID and secret, sets up logging, and generates a unique session ID for each instance.</p>
 <h3 id="2-zkfetch-method" class="heading-element"><span>2. zkFetch Method</span>
   <a href="#2-zkfetch-method" class="heading-mark">
     <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
@@ -220,92 +220,92 @@
 <li>Returns the proof</li>
 </ol>
 <p>Here&rsquo;s a simplified version of the method:</p>
-<pre tabindex="0"><code>async zkFetch(url: string, options?: Options, secretOptions?: secretOptions, retries = 1, retryInterval = 1000) {
-  // Input validation
-  validateURL(url, &#34;zkFetch&#34;);
-  if (options !== undefined) {
-    assertCorrectnessOfOptions(options);
-  }
-  if (secretOptions)  {
-    assertCorrectionOfSecretOptions(secretOptions);
-  }
-
-  // Prepare fetch options
-  const fetchOptions = {
-    method: options?.method || HttpMethod.GET,
-    body: options?.body,
-    headers: { ...options?.headers, ...secretOptions?.headers },
-  };
-
-  // Start verification log
-  await sendLogs({
-    sessionId: this.sessionId,
-    logType: LogType.VERIFICATION_STARTED,
-    applicationId: this.applicationId,
-  });
-
-  // Perform fetch with retries
-  let attempt = 0;
-  while (attempt &lt; retries) {
-    try {
-      const response = await fetch(url, fetchOptions);
-      if (!response.ok) {
-        throw new FetchError(`Failed to fetch ${url} with status ${response.status}`);
-      }
-      const fetchResponse = await response.text();
-
-      // Generate proof
-      const claim = await createClaimOnWitness({
-        name: &#39;http&#39;,
-        params: {
-          method: fetchOptions.method as HttpMethod,
-          url: url,
-          responseMatches: [
-            {
-              type: &#34;contains&#34;,
-              value: fetchResponse,
-            },
-          ],
-          headers: options?.headers,
-          geoLocation: options?.geoLocation,
-          responseRedactions: [],
-          body: fetchOptions.body,
-        },
-        secretParams: {
-          cookieStr: &#34;abc=pqr&#34;,
-          ...secretOptions,
-        },
-        ownerPrivateKey: this.applicationSecret,
-        logger: logger,       
-        client: {
-          url: WITNESS_NODE_URL,
-        }
-      });
-
-      // Log successful proof generation
-      await sendLogs({
-        sessionId: this.sessionId,
-        logType: LogType.PROOF_GENERATED,
-        applicationId: this.applicationId,
-      });
-
-      return claim;
-    } catch (error: any) {
-      // Handle retries
-      attempt++;
-      if (attempt &gt;= retries) {
-        await sendLogs({
-          sessionId: this.sessionId,
-          logType: LogType.ERROR,
-          applicationId: this.applicationId,
-        });
-        logger.error(error);
-        throw error;
-      }
-      await new Promise((resolve) =&gt; setTimeout(resolve, retryInterval));
-    }
-  }
-}</code></pre><h3 id="proof-generation" class="heading-element"><span>Proof Generation</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-typescript" data-lang="typescript"><span style="display:flex;"><span><span style="color:#66d9ef">async</span> <span style="color:#a6e22e">zkFetch</span>(<span style="color:#a6e22e">url</span>: <span style="color:#66d9ef">string</span>, <span style="color:#a6e22e">options?</span>: <span style="color:#66d9ef">Options</span>, <span style="color:#a6e22e">secretOptions?</span>: <span style="color:#66d9ef">secretOptions</span>, <span style="color:#a6e22e">retries</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>, <span style="color:#a6e22e">retryInterval</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">1000</span>) {
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">// Input validation
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#a6e22e">validateURL</span>(<span style="color:#a6e22e">url</span>, <span style="color:#e6db74">&#34;zkFetch&#34;</span>);
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">options</span> <span style="color:#f92672">!==</span> <span style="color:#66d9ef">undefined</span>) {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">assertCorrectnessOfOptions</span>(<span style="color:#a6e22e">options</span>);
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">secretOptions</span>)  {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">assertCorrectionOfSecretOptions</span>(<span style="color:#a6e22e">secretOptions</span>);
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">// Prepare fetch options
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">fetchOptions</span> <span style="color:#f92672">=</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">method</span>: <span style="color:#66d9ef">options?.method</span> <span style="color:#f92672">||</span> <span style="color:#a6e22e">HttpMethod</span>.<span style="color:#a6e22e">GET</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">body</span>: <span style="color:#66d9ef">options?.body</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">headers</span><span style="color:#f92672">:</span> { ...<span style="color:#a6e22e">options</span><span style="color:#f92672">?</span>.<span style="color:#a6e22e">headers</span>, ...<span style="color:#a6e22e">secretOptions</span><span style="color:#f92672">?</span>.<span style="color:#a6e22e">headers</span> },
+</span></span><span style="display:flex;"><span>  };
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">// Start verification log
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#66d9ef">await</span> <span style="color:#a6e22e">sendLogs</span>({
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">sessionId</span>: <span style="color:#66d9ef">this.sessionId</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">logType</span>: <span style="color:#66d9ef">LogType.VERIFICATION_STARTED</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">applicationId</span>: <span style="color:#66d9ef">this.applicationId</span>,
+</span></span><span style="display:flex;"><span>  });
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">// Perform fetch with retries
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">attempt</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">while</span> (<span style="color:#a6e22e">attempt</span> <span style="color:#f92672">&lt;</span> <span style="color:#a6e22e">retries</span>) {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">try</span> {
+</span></span><span style="display:flex;"><span>      <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">response</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">await</span> <span style="color:#a6e22e">fetch</span>(<span style="color:#a6e22e">url</span>, <span style="color:#a6e22e">fetchOptions</span>);
+</span></span><span style="display:flex;"><span>      <span style="color:#66d9ef">if</span> (<span style="color:#f92672">!</span><span style="color:#a6e22e">response</span>.<span style="color:#a6e22e">ok</span>) {
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">throw</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">FetchError</span>(<span style="color:#e6db74">`Failed to fetch </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">url</span><span style="color:#e6db74">}</span><span style="color:#e6db74"> with status </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">response</span>.<span style="color:#a6e22e">status</span><span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>);
+</span></span><span style="display:flex;"><span>      }
+</span></span><span style="display:flex;"><span>      <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">fetchResponse</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">await</span> <span style="color:#a6e22e">response</span>.<span style="color:#a6e22e">text</span>();
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>      <span style="color:#75715e">// Generate proof
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>      <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">claim</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">await</span> <span style="color:#a6e22e">createClaimOnWitness</span>({
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">name</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;http&#39;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">params</span><span style="color:#f92672">:</span> {
+</span></span><span style="display:flex;"><span>          <span style="color:#a6e22e">method</span>: <span style="color:#66d9ef">fetchOptions.method</span> <span style="color:#66d9ef">as</span> <span style="color:#a6e22e">HttpMethod</span>,
+</span></span><span style="display:flex;"><span>          <span style="color:#a6e22e">url</span>: <span style="color:#66d9ef">url</span>,
+</span></span><span style="display:flex;"><span>          <span style="color:#a6e22e">responseMatches</span><span style="color:#f92672">:</span> [
+</span></span><span style="display:flex;"><span>            {
+</span></span><span style="display:flex;"><span>              <span style="color:#66d9ef">type</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;contains&#34;</span>,
+</span></span><span style="display:flex;"><span>              <span style="color:#a6e22e">value</span>: <span style="color:#66d9ef">fetchResponse</span>,
+</span></span><span style="display:flex;"><span>            },
+</span></span><span style="display:flex;"><span>          ],
+</span></span><span style="display:flex;"><span>          <span style="color:#a6e22e">headers</span>: <span style="color:#66d9ef">options?.headers</span>,
+</span></span><span style="display:flex;"><span>          <span style="color:#a6e22e">geoLocation</span>: <span style="color:#66d9ef">options?.geoLocation</span>,
+</span></span><span style="display:flex;"><span>          <span style="color:#a6e22e">responseRedactions</span><span style="color:#f92672">:</span> [],
+</span></span><span style="display:flex;"><span>          <span style="color:#a6e22e">body</span>: <span style="color:#66d9ef">fetchOptions.body</span>,
+</span></span><span style="display:flex;"><span>        },
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">secretParams</span><span style="color:#f92672">:</span> {
+</span></span><span style="display:flex;"><span>          <span style="color:#a6e22e">cookieStr</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;abc=pqr&#34;</span>,
+</span></span><span style="display:flex;"><span>          ...<span style="color:#a6e22e">secretOptions</span>,
+</span></span><span style="display:flex;"><span>        },
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">ownerPrivateKey</span>: <span style="color:#66d9ef">this.applicationSecret</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">logger</span>: <span style="color:#66d9ef">logger</span>,       
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">client</span><span style="color:#f92672">:</span> {
+</span></span><span style="display:flex;"><span>          <span style="color:#a6e22e">url</span>: <span style="color:#66d9ef">WITNESS_NODE_URL</span>,
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>      });
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>      <span style="color:#75715e">// Log successful proof generation
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>      <span style="color:#66d9ef">await</span> <span style="color:#a6e22e">sendLogs</span>({
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">sessionId</span>: <span style="color:#66d9ef">this.sessionId</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">logType</span>: <span style="color:#66d9ef">LogType.PROOF_GENERATED</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">applicationId</span>: <span style="color:#66d9ef">this.applicationId</span>,
+</span></span><span style="display:flex;"><span>      });
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>      <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">claim</span>;
+</span></span><span style="display:flex;"><span>    } <span style="color:#66d9ef">catch</span> (<span style="color:#a6e22e">error</span>: <span style="color:#66d9ef">any</span>) {
+</span></span><span style="display:flex;"><span>      <span style="color:#75715e">// Handle retries
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>      <span style="color:#a6e22e">attempt</span><span style="color:#f92672">++</span>;
+</span></span><span style="display:flex;"><span>      <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">attempt</span> <span style="color:#f92672">&gt;=</span> <span style="color:#a6e22e">retries</span>) {
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">await</span> <span style="color:#a6e22e">sendLogs</span>({
+</span></span><span style="display:flex;"><span>          <span style="color:#a6e22e">sessionId</span>: <span style="color:#66d9ef">this.sessionId</span>,
+</span></span><span style="display:flex;"><span>          <span style="color:#a6e22e">logType</span>: <span style="color:#66d9ef">LogType.ERROR</span>,
+</span></span><span style="display:flex;"><span>          <span style="color:#a6e22e">applicationId</span>: <span style="color:#66d9ef">this.applicationId</span>,
+</span></span><span style="display:flex;"><span>        });
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">logger</span>.<span style="color:#a6e22e">error</span>(<span style="color:#a6e22e">error</span>);
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">throw</span> <span style="color:#a6e22e">error</span>;
+</span></span><span style="display:flex;"><span>      }
+</span></span><span style="display:flex;"><span>      <span style="color:#66d9ef">await</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">Promise</span>((<span style="color:#a6e22e">resolve</span>) <span style="color:#f92672">=&gt;</span> <span style="color:#a6e22e">setTimeout</span>(<span style="color:#a6e22e">resolve</span>, <span style="color:#a6e22e">retryInterval</span>));
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></div><h3 id="proof-generation" class="heading-element"><span>Proof Generation</span>
   <a href="#proof-generation" class="heading-mark">
     <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
   </a>
@@ -348,7 +348,7 @@
     <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
   </a>
 </h2><p>While not part of the zkFetch library itself, the verification process is a crucial part of the overall system. Verification is typically done using the Reclaim Protocol&rsquo;s <code>verifySignedProof</code> function:</p>
-<div class="highlight no-header"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">isProofVerified</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">await</span> <span style="color:#a6e22e">Reclaim</span>.<span style="color:#a6e22e">verifySignedProof</span>(<span style="color:#a6e22e">proof</span>);</span></span></code></pre></div><p>This function checks the cryptographic signatures and recalculates the proof identifier to ensure the proof hasn&rsquo;t been tampered with.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-typescript" data-lang="typescript"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">isProofVerified</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">await</span> <span style="color:#a6e22e">Reclaim</span>.<span style="color:#a6e22e">verifySignedProof</span>(<span style="color:#a6e22e">proof</span>);</span></span></code></pre></div><p>This function checks the cryptographic signatures and recalculates the proof identifier to ensure the proof hasn&rsquo;t been tampered with.</p>
 <h2 id="use-cases-and-benefits" class="heading-element"><span>Use Cases and Benefits</span>
   <a href="#use-cases-and-benefits" class="heading-mark">
     <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
