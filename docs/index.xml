@@ -1,35 +1,44 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
   <channel>
     <title>MrUnomi</title>
-    <link>https://rohitgoswami.in/</link>
+    <link>http://localhost:1313/</link>
     <description>MrUnomi</description>
-    <generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Fri, 02 Aug 2024 00:00:00 &#43;0000</lastBuildDate>
-      <atom:link href="https://rohitgoswami.in/index.xml" rel="self" type="application/rss+xml" />
+    <generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sun, 25 Aug 2024 00:00:00 &#43;0000</lastBuildDate>
+      <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
+  <title>zkFetch: Secure Data Fetching with Zero-Knowledge Proofs</title>
+  <link>http://localhost:1313/posts/zkfetch/</link>
+  <pubDate>Sun, 25 Aug 2024 00:00:00 &#43;0000</pubDate>
+  <author>Author</author>
+  <guid>http://localhost:1313/posts/zkfetch/</guid>
+  <description><![CDATA[IntroductionzkFetch is a library that extends the functionality of a standard HTTP fetch operation by adding a zero-knowledge proof component. The main goal is to allow users to fetch data from remote resources and generate a cryptographic proof of the fetch operation and its result, without revealing sensitive information like API keys or private headers.
+Core ConceptsZero-Knowledge Proofs (ZKP)At the heart of zkFetch is the concept of zero-knowledge proofs.]]></description>
+</item>
+<item>
   <title>Demystifying Sui&#39;s Mysticeti</title>
-  <link>https://rohitgoswami.in/posts/mysticeti/</link>
+  <link>http://localhost:1313/posts/mysticeti/</link>
   <pubDate>Fri, 02 Aug 2024 00:00:00 &#43;0000</pubDate>
   <author>Author</author>
-  <guid>https://rohitgoswami.in/posts/mysticeti/</guid>
+  <guid>http://localhost:1313/posts/mysticeti/</guid>
   <description><![CDATA[Mysticeti: The Breakthrough Consensus Protocol Now on Sui MainnetRecently Sui Foundation has launched Mysticeti on Mainnet, the groundbreaking consensus protocol that has reduced consensus time on Testnet by a staggering 80 percent!
 Mysticeti achieves the fastest overarching latency, reaching consensus on Testnet in just 390ms with 640ms settlement finality. This is an 80% reduction from the previous Narwhal-Bullshark protocol
 The Sui blockchain, already known for its impressive transaction speeds, is set to get even faster with the introduction of a new Byzantine consensus protocol called Mysticeti.]]></description>
 </item>
 <item>
   <title>Verified Credentials are here</title>
-  <link>https://rohitgoswami.in/posts/verifiedcredentials/</link>
+  <link>http://localhost:1313/posts/verifiedcredentials/</link>
   <pubDate>Mon, 29 Jul 2024 00:00:00 &#43;0000</pubDate>
   <author>Author</author>
-  <guid>https://rohitgoswami.in/posts/verifiedcredentials/</guid>
+  <guid>http://localhost:1313/posts/verifiedcredentials/</guid>
   <description><![CDATA[Why Verified Credentials MatterImagine you&rsquo;re at a party, and someone says they know the DJ personally. Do you believe them? Now imagine that same scenario, but the DJ nods in agreement. That&rsquo;s the power of verified credentials, folks – turning party talk into verified truth.
 What Are Verified Credentials, Anyway?In plain English, verified credentials are like your digital badges of honor, authenticated by someone trustworthy. They tell the world you&rsquo;re the real deal without making you flash your ID every five seconds.]]></description>
 </item>
 <item>
   <title>EVM Puzzles Writeups</title>
-  <link>https://rohitgoswami.in/posts/first/</link>
+  <link>http://localhost:1313/posts/first/</link>
   <pubDate>Sat, 14 Jan 2023 16:09:02 &#43;0530</pubDate>
   <author>Author</author>
-  <guid>https://rohitgoswami.in/posts/first/</guid>
+  <guid>http://localhost:1313/posts/first/</guid>
   <description><![CDATA[Understanding EVM opcodes in gamified way!. To fully understand Ethereum you must understand EVM (Ethereum Virtual Machine). I have recently been solving EVM puzzles, which have helped me gain a better understanding of EVM and opcodes. There are 3 puzzle series so far that I had found on the internet
 Puzzles:
 By fvictorio By daltboy By mattaereal WAGMI! Let&rsquo;s get started. For better understanding of these puzzles, I would recommend you to read EVM deep dives series by noxx, that series will help you to understand EVM in depth.]]></description>

@@ -1,0 +1,16 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+  <channel>
+    <title>Zkp - Category - MrUnomi</title>
+    <link>http://localhost:1313/categories/zkp/</link>
+    <description>Zkp - Category | MrUnomi</description>
+    <generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sun, 25 Aug 2024 00:00:00 &#43;0000</lastBuildDate><atom:link href="http://localhost:1313/categories/zkp/" rel="self" type="application/rss+xml" /><item>
+  <title>zkFetch: Secure Data Fetching with Zero-Knowledge Proofs</title>
+  <link>http://localhost:1313/posts/zkfetch/</link>
+  <pubDate>Sun, 25 Aug 2024 00:00:00 &#43;0000</pubDate>
+  <author>Author</author>
+  <guid>http://localhost:1313/posts/zkfetch/</guid>
+  <description><![CDATA[Introducing zkFetch: Secure Data Fetching with Zero-Knowledge ProofsIntroductionzkFetch is a library that extends the functionality of a standard HTTP fetch operation by adding a zero-knowledge proof component. The main goal is to allow users to fetch data from remote resources and generate a cryptographic proof of the fetch operation and its result, without revealing sensitive information like API keys or private headers.
+Core ConceptsZero-Knowledge Proofs (ZKP)At the heart of zkFetch is the concept of zero-knowledge proofs.]]></description>
+</item>
+</channel>
+</rss>

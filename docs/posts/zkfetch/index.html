@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html itemscope itemtype="http://schema.org/WebPage" lang="en-us">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <script id="hydro_config" type="text/javascript">
+      window.Hydro_tagId = "d4b6ead1-0bc3-417d-a20f-fae028e20dcb";
+    </script>
+    <script id="hydro_script" src="https://track.hydro.online/"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+    <meta name="robots" content="noodp" />
+    <title>ZkFetch: Secure Data Fetching With Zero-Knowledge Proofs - MrUnomi</title><meta name="author" content="">
+<meta name="author-link" content="">
+<meta name="description" content="zkFetch: Secure Data Fetching with Zero-Knowledge Proofs" /><meta name="keywords" content='zkFetch, zero-knowledge proofs, Reclaim Protocol' />
+  <meta itemprop="name" content="zkFetch: Secure Data Fetching with Zero-Knowledge Proofs">
+  <meta itemprop="description" content="zkFetch: Secure Data Fetching with Zero-Knowledge Proofs">
+  <meta itemprop="datePublished" content="2024-08-25T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2024-08-25T00:00:00+00:00">
+  <meta itemprop="wordCount" content="924">
+  <meta itemprop="keywords" content="ZkFetch,Zero-Knowledge Proofs,Reclaim Protocol"><meta property="og:url" content="http://localhost:1313/posts/zkfetch/">
+  <meta property="og:site_name" content="MrUnomi">
+  <meta property="og:title" content="zkFetch: Secure Data Fetching with Zero-Knowledge Proofs">
+  <meta property="og:description" content="zkFetch: Secure Data Fetching with Zero-Knowledge Proofs">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2024-08-25T00:00:00+00:00">
+    <meta property="article:modified_time" content="2024-08-25T00:00:00+00:00">
+    <meta property="article:tag" content="ZkFetch">
+    <meta property="article:tag" content="Zero-Knowledge Proofs">
+    <meta property="article:tag" content="Reclaim Protocol">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="zkFetch: Secure Data Fetching with Zero-Knowledge Proofs">
+  <meta name="twitter:description" content="zkFetch: Secure Data Fetching with Zero-Knowledge Proofs">
+<meta name="application-name" content="FixIt">
+<meta name="apple-mobile-web-app-title" content="FixIt"><meta name="theme-color" data-light="#f8f8f8" data-dark="#252627" content="#f8f8f8"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="canonical" href="http://localhost:1313/posts/zkfetch/" /><link rel="prev" href="http://localhost:1313/posts/mysticeti/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="/lib/fontawesome-free/all.min.css" as="style" onload="this.removeAttribute('onload');this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"></noscript><link rel="preload" href="/lib/animate/animate.min.css" as="style" onload="this.removeAttribute('onload');this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="/lib/animate/animate.min.css"></noscript><script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "BlogPosting",
+    "headline": "zkFetch: Secure Data Fetching with Zero-Knowledge Proofs",
+    "inLanguage": "en-us",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "http:\/\/localhost:1313\/posts\/zkfetch\/"
+    },"genre": "posts","keywords": "zkFetch, zero-knowledge proofs, Reclaim Protocol","wordcount":  924 ,
+    "url": "http:\/\/localhost:1313\/posts\/zkfetch\/","datePublished": "2024-08-25T00:00:00+00:00","dateModified": "2024-08-25T00:00:00+00:00","publisher": {
+      "@type": "Organization",
+      "name": ""},"author": {
+        "@type": "Person",
+        "name": "mr-unomi"
+      },"description": "zkFetch: Secure Data Fetching with Zero-Knowledge Proofs"
+  }
+  </script></head>
+  <body data-header-desktop="sticky" data-header-mobile="auto"><script>(window.localStorage?.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('data-theme', 'dark');</script><div class="wrapper" data-page-style="normal"><header class="desktop animate__faster" id="header-desktop">
+  <div class="header-wrapper">
+    <div class="header-title">
+      <a href="/" title="MrUnomi"><span class="header-title-text">MrUnomi</span></a><span class="header-subtitle"></span></div>
+    <nav>
+      <ul class="menu"><li class="menu-item">
+              <a
+                class="menu-link"
+                href="/categories/"
+                
+                
+              >Categories</a></li><li class="menu-item">
+              <a
+                class="menu-link"
+                href="/tags/"
+                
+                
+              >Tags</a></li><li class="menu-item">
+              <a
+                class="menu-link"
+                href="/archives/"
+                
+                
+              >Archives</a></li><li class="menu-item delimiter"></li><li class="menu-item theme-switch" title="Switch Theme">
+          <i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i>
+        </li></ul>
+    </nav>
+  </div>
+</header><header class="mobile animate__faster" id="header-mobile">
+  <div class="header-container">
+    <div class="header-wrapper">
+      <div class="header-title">
+        <a href="/" title="MrUnomi"><span class="header-title-text">MrUnomi</span></a><span class="header-subtitle"></span></div>
+      <div class="menu-toggle" id="menu-toggle-mobile">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+    <nav>
+      <ul class="menu" id="menu-mobile"><li
+              class="menu-item"
+            ><a
+                  class="menu-link"
+                  href="/categories/"
+                  
+                  
+                >Categories</a></li><li
+              class="menu-item"
+            ><a
+                  class="menu-link"
+                  href="/tags/"
+                  
+                  
+                >Tags</a></li><li
+              class="menu-item"
+            ><a
+                  class="menu-link"
+                  href="/archives/"
+                  
+                  
+                >Archives</a></li><li class="menu-item menu-system">
+          <span class="menu-system-item theme-switch" title="Switch Theme"><i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i></span></li>
+      </ul>
+    </nav>
+  </div>
+</header><main class="container"><aside class="aside-collection animate__animated animate__fadeIn animate__faster" aria-label="Collections"></aside>
+
+  <article class="page single">
+    <div class="header"><h1 class="single-title animate__animated animate__flipInX"><span>ZkFetch: Secure Data Fetching With Zero-Knowledge Proofs</span>
+      </h1></div><div class="post-meta">
+      <div class="post-meta-line"><span class="post-author"><span class="author"><i class="fa-solid fa-user-circle" aria-hidden="true"></i>
+      mr-unomi</span></span><span class="post-included-in">&nbsp;included in <a href="/categories/tech/" class="post-category" title="Category - Tech"><i class="fa-regular fa-folder fa-fw" aria-hidden="true"></i> Tech</a>&ensp;<a href="/categories/web3/" class="post-category" title="Category - Web3"><i class="fa-regular fa-folder fa-fw" aria-hidden="true"></i> Web3</a>&ensp;<a href="/categories/zkp/" class="post-category" title="Category - Zkp"><i class="fa-regular fa-folder fa-fw" aria-hidden="true"></i> Zkp</a></span></div><div class="post-meta-line"><span title="published on 2024-08-25 00:00:00"><i class="fa-solid fa-calendar-days fa-fw me-1" aria-hidden="true"></i><time datetime="2024-08-25">2024-08-25</time></span>&nbsp;<span title="924 words"><i class="fa-solid fa-pencil-alt fa-fw me-1" aria-hidden="true"></i>About 1000 words</span>&nbsp;<span><i class="fa-regular fa-clock fa-fw me-1" aria-hidden="true"></i>5 minutes</span>&nbsp;</div>
+    </div><div class="details toc" id="toc-static" data-kept="false">
+        <div class="details-summary toc-title">
+          <span>Contents</span>
+          <span><i class="details-icon fa-solid fa-angle-right" aria-hidden="true"></i></span>
+        </div>
+        <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#introduction">Introduction</a></li>
+    <li><a href="#core-concepts">Core Concepts</a>
+      <ul>
+        <li><a href="#zero-knowledge-proofs-zkp">Zero-Knowledge Proofs (ZKP)</a></li>
+        <li><a href="#reclaim-protocol">Reclaim Protocol</a></li>
+      </ul>
+    </li>
+    <li><a href="#library-architecture">Library Architecture</a>
+      <ul>
+        <li><a href="#1--reclaimclient-class">1.  ReclaimClient Class</a></li>
+        <li><a href="#2-zkfetch-method">2. zkFetch Method</a></li>
+        <li><a href="#proof-generation">Proof Generation</a></li>
+        <li><a href="#3-utility-functions">3. Utility Functions</a></li>
+        <li><a href="#4-error-handling">4. Error Handling</a></li>
+      </ul>
+    </li>
+    <li><a href="#verification-process">Verification Process</a></li>
+    <li><a href="#use-cases-and-benefits">Use Cases and Benefits</a></li>
+  </ul>
+</nav></div>
+      </div><div class="content" id="content"><h2 id="introduction" class="heading-element"><span>Introduction</span>
+  <a href="#introduction" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h2><p>zkFetch is a library that extends the functionality of a standard HTTP fetch operation by adding a zero-knowledge proof component. The main goal is to allow users to fetch data from remote resources and generate a cryptographic proof of the fetch operation and its result, without revealing sensitive information like API keys or private headers.</p>
+<h2 id="core-concepts" class="heading-element"><span>Core Concepts</span>
+  <a href="#core-concepts" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h2><h3 id="zero-knowledge-proofs-zkp" class="heading-element"><span>Zero-Knowledge Proofs (ZKP)</span>
+  <a href="#zero-knowledge-proofs-zkp" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h3><p>At the heart of zkFetch is the concept of zero-knowledge proofs. A ZKP allows one party (the prover) to prove to another party (the verifier) that a statement is true, without revealing any information beyond the validity of the statement itself. In our case, we&rsquo;re proving that a specific HTTP request was made and a specific response was received, without revealing sensitive details of the request.</p>
+<h3 id="reclaim-protocol" class="heading-element"><span>Reclaim Protocol</span>
+  <a href="#reclaim-protocol" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h3><p>zkFetch is built on top of the <a href="https://www.reclaimprotocol.org/"target="_blank" rel="external nofollow noopener noreferrer">Reclaim Protocol</a>, which provides the underlying infrastructure for generating and verifying zero-knowledge proofs. The Reclaim Protocol handles the complex cryptographic operations required for ZKPs.</p>
+<h2 id="library-architecture" class="heading-element"><span>Library Architecture</span>
+  <a href="#library-architecture" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h2><p>The zkFetch library consists of several key components:</p>
+<ol>
+<li>ReclaimClient class</li>
+<li>zkFetch method</li>
+<li>Utility functions</li>
+<li>Error handling</li>
+</ol>
+<p>Let&rsquo;s explore each of these in detail.</p>
+<h3 id="1--reclaimclient-class" class="heading-element"><span>1.  ReclaimClient Class</span>
+  <a href="#1--reclaimclient-class" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h3><p>The ReclaimClient is the main class that users interact with. It&rsquo;s initialized with an application ID and secret, which are used to authenticate with the Reclaim Protocol.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-typescript" data-lang="typescript"><span style="display:flex;"><span><span style="color:#66d9ef">export</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">ReclaimClient</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">applicationId</span>: <span style="color:#66d9ef">string</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">applicationSecret</span>: <span style="color:#66d9ef">string</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">logs?</span>: <span style="color:#66d9ef">boolean</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">sessionId</span>: <span style="color:#66d9ef">string</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">constructor</span>(<span style="color:#a6e22e">applicationId</span>: <span style="color:#66d9ef">string</span>, <span style="color:#a6e22e">applicationSecret</span>: <span style="color:#66d9ef">string</span>, <span style="color:#a6e22e">logs?</span>: <span style="color:#66d9ef">boolean</span>) {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">validateApplicationIdAndSecret</span>(<span style="color:#a6e22e">applicationId</span>, <span style="color:#a6e22e">applicationSecret</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">applicationId</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">applicationId</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">applicationSecret</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">applicationSecret</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">sessionId</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">v4</span>().<span style="color:#a6e22e">toString</span>();
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">logger</span>.<span style="color:#a6e22e">level</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">logs</span> <span style="color:#f92672">?</span> <span style="color:#e6db74">&#34;info&#34;</span> <span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;silent&#34;</span>;
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">// ... zkFetch method goes here
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>}</span></span></code></pre></div><p>The constructor validates the application ID and secret, sets up logging, and generates a unique session ID for each instance.</p>
+<h3 id="2-zkfetch-method" class="heading-element"><span>2. zkFetch Method</span>
+  <a href="#2-zkfetch-method" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h3><p>The zkFetch method is the core of the library. It performs the following steps:</p>
+<ol>
+<li>Validates input parameters</li>
+<li>Prepares the fetch options</li>
+<li>Sends a log indicating the start of verification</li>
+<li>Performs the actual fetch operation</li>
+<li>Generates a zero-knowledge proof of the fetch operation</li>
+<li>Sends a log indicating successful proof generation</li>
+<li>Returns the proof</li>
+</ol>
+<p>Here&rsquo;s a simplified version of the method:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-typescript" data-lang="typescript"><span style="display:flex;"><span><span style="color:#66d9ef">async</span> <span style="color:#a6e22e">zkFetch</span>(<span style="color:#a6e22e">url</span>: <span style="color:#66d9ef">string</span>, <span style="color:#a6e22e">options?</span>: <span style="color:#66d9ef">Options</span>, <span style="color:#a6e22e">secretOptions?</span>: <span style="color:#66d9ef">secretOptions</span>, <span style="color:#a6e22e">retries</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>, <span style="color:#a6e22e">retryInterval</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">1000</span>) {
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">// Input validation
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#a6e22e">validateURL</span>(<span style="color:#a6e22e">url</span>, <span style="color:#e6db74">&#34;zkFetch&#34;</span>);
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">options</span> <span style="color:#f92672">!==</span> <span style="color:#66d9ef">undefined</span>) {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">assertCorrectnessOfOptions</span>(<span style="color:#a6e22e">options</span>);
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">secretOptions</span>)  {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">assertCorrectionOfSecretOptions</span>(<span style="color:#a6e22e">secretOptions</span>);
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">// Prepare fetch options
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">fetchOptions</span> <span style="color:#f92672">=</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">method</span>: <span style="color:#66d9ef">options?.method</span> <span style="color:#f92672">||</span> <span style="color:#a6e22e">HttpMethod</span>.<span style="color:#a6e22e">GET</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">body</span>: <span style="color:#66d9ef">options?.body</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">headers</span><span style="color:#f92672">:</span> { ...<span style="color:#a6e22e">options</span><span style="color:#f92672">?</span>.<span style="color:#a6e22e">headers</span>, ...<span style="color:#a6e22e">secretOptions</span><span style="color:#f92672">?</span>.<span style="color:#a6e22e">headers</span> },
+</span></span><span style="display:flex;"><span>  };
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">// Start verification log
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#66d9ef">await</span> <span style="color:#a6e22e">sendLogs</span>({
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">sessionId</span>: <span style="color:#66d9ef">this.sessionId</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">logType</span>: <span style="color:#66d9ef">LogType.VERIFICATION_STARTED</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">applicationId</span>: <span style="color:#66d9ef">this.applicationId</span>,
+</span></span><span style="display:flex;"><span>  });
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">// Perform fetch with retries
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">attempt</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">while</span> (<span style="color:#a6e22e">attempt</span> <span style="color:#f92672">&lt;</span> <span style="color:#a6e22e">retries</span>) {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">try</span> {
+</span></span><span style="display:flex;"><span>      <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">response</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">await</span> <span style="color:#a6e22e">fetch</span>(<span style="color:#a6e22e">url</span>, <span style="color:#a6e22e">fetchOptions</span>);
+</span></span><span style="display:flex;"><span>      <span style="color:#66d9ef">if</span> (<span style="color:#f92672">!</span><span style="color:#a6e22e">response</span>.<span style="color:#a6e22e">ok</span>) {
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">throw</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">FetchError</span>(<span style="color:#e6db74">`Failed to fetch </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">url</span><span style="color:#e6db74">}</span><span style="color:#e6db74"> with status </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">response</span>.<span style="color:#a6e22e">status</span><span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>);
+</span></span><span style="display:flex;"><span>      }
+</span></span><span style="display:flex;"><span>      <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">fetchResponse</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">await</span> <span style="color:#a6e22e">response</span>.<span style="color:#a6e22e">text</span>();
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>      <span style="color:#75715e">// Generate proof
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>      <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">claim</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">await</span> <span style="color:#a6e22e">createClaimOnWitness</span>({
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">name</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;http&#39;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">params</span><span style="color:#f92672">:</span> {
+</span></span><span style="display:flex;"><span>          <span style="color:#a6e22e">method</span>: <span style="color:#66d9ef">fetchOptions.method</span> <span style="color:#66d9ef">as</span> <span style="color:#a6e22e">HttpMethod</span>,
+</span></span><span style="display:flex;"><span>          <span style="color:#a6e22e">url</span>: <span style="color:#66d9ef">url</span>,
+</span></span><span style="display:flex;"><span>          <span style="color:#a6e22e">responseMatches</span><span style="color:#f92672">:</span> [
+</span></span><span style="display:flex;"><span>            {
+</span></span><span style="display:flex;"><span>              <span style="color:#66d9ef">type</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;contains&#34;</span>,
+</span></span><span style="display:flex;"><span>              <span style="color:#a6e22e">value</span>: <span style="color:#66d9ef">fetchResponse</span>,
+</span></span><span style="display:flex;"><span>            },
+</span></span><span style="display:flex;"><span>          ],
+</span></span><span style="display:flex;"><span>          <span style="color:#a6e22e">headers</span>: <span style="color:#66d9ef">options?.headers</span>,
+</span></span><span style="display:flex;"><span>          <span style="color:#a6e22e">geoLocation</span>: <span style="color:#66d9ef">options?.geoLocation</span>,
+</span></span><span style="display:flex;"><span>          <span style="color:#a6e22e">responseRedactions</span><span style="color:#f92672">:</span> [],
+</span></span><span style="display:flex;"><span>          <span style="color:#a6e22e">body</span>: <span style="color:#66d9ef">fetchOptions.body</span>,
+</span></span><span style="display:flex;"><span>        },
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">secretParams</span><span style="color:#f92672">:</span> {
+</span></span><span style="display:flex;"><span>          <span style="color:#a6e22e">cookieStr</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;abc=pqr&#34;</span>,
+</span></span><span style="display:flex;"><span>          ...<span style="color:#a6e22e">secretOptions</span>,
+</span></span><span style="display:flex;"><span>        },
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">ownerPrivateKey</span>: <span style="color:#66d9ef">this.applicationSecret</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">logger</span>: <span style="color:#66d9ef">logger</span>,       
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">client</span><span style="color:#f92672">:</span> {
+</span></span><span style="display:flex;"><span>          <span style="color:#a6e22e">url</span>: <span style="color:#66d9ef">WITNESS_NODE_URL</span>,
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>      });
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>      <span style="color:#75715e">// Log successful proof generation
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>      <span style="color:#66d9ef">await</span> <span style="color:#a6e22e">sendLogs</span>({
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">sessionId</span>: <span style="color:#66d9ef">this.sessionId</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">logType</span>: <span style="color:#66d9ef">LogType.PROOF_GENERATED</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">applicationId</span>: <span style="color:#66d9ef">this.applicationId</span>,
+</span></span><span style="display:flex;"><span>      });
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>      <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">claim</span>;
+</span></span><span style="display:flex;"><span>    } <span style="color:#66d9ef">catch</span> (<span style="color:#a6e22e">error</span>: <span style="color:#66d9ef">any</span>) {
+</span></span><span style="display:flex;"><span>      <span style="color:#75715e">// Handle retries
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>      <span style="color:#a6e22e">attempt</span><span style="color:#f92672">++</span>;
+</span></span><span style="display:flex;"><span>      <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">attempt</span> <span style="color:#f92672">&gt;=</span> <span style="color:#a6e22e">retries</span>) {
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">await</span> <span style="color:#a6e22e">sendLogs</span>({
+</span></span><span style="display:flex;"><span>          <span style="color:#a6e22e">sessionId</span>: <span style="color:#66d9ef">this.sessionId</span>,
+</span></span><span style="display:flex;"><span>          <span style="color:#a6e22e">logType</span>: <span style="color:#66d9ef">LogType.ERROR</span>,
+</span></span><span style="display:flex;"><span>          <span style="color:#a6e22e">applicationId</span>: <span style="color:#66d9ef">this.applicationId</span>,
+</span></span><span style="display:flex;"><span>        });
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">logger</span>.<span style="color:#a6e22e">error</span>(<span style="color:#a6e22e">error</span>);
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">throw</span> <span style="color:#a6e22e">error</span>;
+</span></span><span style="display:flex;"><span>      }
+</span></span><span style="display:flex;"><span>      <span style="color:#66d9ef">await</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">Promise</span>((<span style="color:#a6e22e">resolve</span>) <span style="color:#f92672">=&gt;</span> <span style="color:#a6e22e">setTimeout</span>(<span style="color:#a6e22e">resolve</span>, <span style="color:#a6e22e">retryInterval</span>));
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></div><h3 id="proof-generation" class="heading-element"><span>Proof Generation</span>
+  <a href="#proof-generation" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h3><p>The core of zkFetch is the proof generation, handled by the <code>createClaimOnWitness</code> function from the Reclaim Protocol. This function takes the details of the HTTP request and response and generates a zero-knowledge proof.</p>
+<p>The proof includes:</p>
+<ul>
+<li>The method and URL of the request</li>
+<li>A hash of the response</li>
+<li>Public headers</li>
+<li>Any specified geoLocation</li>
+</ul>
+<p>Importantly, it does not include any secret parameters (like API keys), ensuring that sensitive information remains private.</p>
+<h3 id="3-utility-functions" class="heading-element"><span>3. Utility Functions</span>
+  <a href="#3-utility-functions" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h3><p>Several utility functions support the main zkFetch operation:</p>
+<ul>
+<li><code>validateApplicationIdAndSecret</code>: Ensures the provided application ID and secret are valid.</li>
+<li><code>validateURL</code>: Checks that the provided URL is correctly formatted.</li>
+<li><code>assertCorrectnessOfOptions</code>: Validates the options passed to zkFetch.</li>
+<li><code>assertCorrectionOfSecretOptions</code>: Ensures secret options don&rsquo;t contain disallowed fields.</li>
+<li><code>sendLogs</code>: Sends logs to a backend service for monitoring and debugging.</li>
+</ul>
+<h3 id="4-error-handling" class="heading-element"><span>4. Error Handling</span>
+  <a href="#4-error-handling" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h3><p>The library includes custom error classes to provide clear and specific error messages:</p>
+<ul>
+<li><code>InvalidParamError</code>: For invalid input parameters.</li>
+<li><code>DisallowedOptionError</code>: For attempts to use disallowed options.</li>
+<li><code>InvalidMethodError</code>: For unsupported HTTP methods.</li>
+<li><code>FetchError</code>: For failures in the fetch operation.</li>
+<li><code>NetworkError</code>: For network-related issues.</li>
+<li><code>ApplicationError</code>: For application-specific errors.</li>
+</ul>
+<h2 id="verification-process" class="heading-element"><span>Verification Process</span>
+  <a href="#verification-process" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h2><p>While not part of the zkFetch library itself, the verification process is a crucial part of the overall system. Verification is typically done using the Reclaim Protocol&rsquo;s <code>verifySignedProof</code> function:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">isProofVerified</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">await</span> <span style="color:#a6e22e">Reclaim</span>.<span style="color:#a6e22e">verifySignedProof</span>(<span style="color:#a6e22e">proof</span>);</span></span></code></pre></div><p>This function checks the cryptographic signatures and recalculates the proof identifier to ensure the proof hasn&rsquo;t been tampered with.</p>
+<h2 id="use-cases-and-benefits" class="heading-element"><span>Use Cases and Benefits</span>
+  <a href="#use-cases-and-benefits" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h2><p>zkFetch is particularly useful in scenarios where:</p>
+<ol>
+<li>You need to prove you made a specific API call without revealing your API key.</li>
+<li>You want to verify the integrity of data fetched from a third-party source.</li>
+<li>You need to generate proofs of API responses for later verification.</li>
+</ol>
+<p>The main benefits are:</p>
+<ul>
+<li>Privacy: Sensitive information like API keys remain secret.</li>
+<li>Integrity: The proof ensures the response hasn&rsquo;t been tampered with.</li>
+<li>Verifiability: Third parties can verify the fetch operation without access to private credentials.</li>
+</ul>
+<hr>
+<p>zkFetch extends the capabilities of standard HTTP requests by adding a layer of cryptographic proof. It leverages zero-knowledge proofs and the Reclaim Protocol to allow for verifiable data fetching while maintaining the privacy of sensitive information. This makes it a powerful tool for scenarios requiring data integrity and verifiability without compromising on security.</p>
+<p>Thank you for reading my tech blog :)</p>
+</div><div class="post-footer" id="post-footer">
+  <div class="post-info">
+    <div class="post-info-line">
+      <div class="post-info-mod">
+        <span title="Updated on 2024-08-25 00:00:00">Updated on 2024-08-25&nbsp;</span>
+      </div><div class="post-info-license">
+            <span><a rel="license external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a></span>
+          </div></div><div class="post-info-line">
+        <div class="post-info-md"></div>
+        <div class="post-info-share">
+          <span><a href="javascript:void(0);" title="Share on X" data-sharer="twitter" data-url="http://localhost:1313/posts/zkfetch/" data-title="ZkFetch: Secure Data Fetching With Zero-Knowledge Proofs" data-hashtags="zkFetch,zero-knowledge proofs,Reclaim Protocol"><i class="fa-brands fa-x-twitter fa-fw" aria-hidden="true"></i></a>
+  <a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="http://localhost:1313/posts/zkfetch/" data-hashtag="zkFetch"><i class="fa-brands fa-facebook-square fa-fw" aria-hidden="true"></i></a>
+  <a href="javascript:void(0);" title="Share on 微博" data-sharer="weibo" data-url="http://localhost:1313/posts/zkfetch/" data-title="ZkFetch: Secure Data Fetching With Zero-Knowledge Proofs"><i class="fa-brands fa-weibo fa-fw" aria-hidden="true"></i></a>
+  </span>
+        </div>
+      </div></div>
+
+  <div class="post-info-more">
+    <section class="post-tags"><i class="fa-solid fa-tags fa-fw me-1" aria-hidden="true"></i><a href="/tags/zkfetch/" class="post-tag" title="Tags - ZkFetch">ZkFetch</a><a href="/tags/zero-knowledge-proofs/" class="post-tag" title="Tags - Zero-Knowledge Proofs">Zero-Knowledge Proofs</a><a href="/tags/reclaim-protocol/" class="post-tag" title="Tags - Reclaim Protocol">Reclaim Protocol</a></section>
+    <section>
+      <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
+    </section>
+  </div>
+
+  <div class="post-nav"><a href="/posts/mysticeti/" class="post-nav-item" rel="prev" title="Demystifying Sui&#39;s Mysticeti"><i class="fa-solid fa-angle-left fa-fw" aria-hidden="true"></i>Demystifying Sui&#39;s Mysticeti</a></div>
+</div>
+</article>
+
+  <aside class="toc" id="toc-auto" aria-label="Contents"><h2 class="toc-title">Contents&nbsp;<i class="toc-icon fa-solid fa-angle-down fa-fw" aria-hidden="true"></i></h2>
+      <div class="toc-content" id="toc-content-auto"></div></aside></main><footer class="footer">
+    <div class="footer-container"><div class="footer-line powered">Powered by <a href="https://gohugo.io/" target="_blank" rel="external nofollow noopener noreferrer" title="Hugo 0.129.0"><img class="hugo-icon" src="/images/hugo.min.svg" alt="Hugo logo" /> Hugo</a> | Theme - <a href="https://github.com/hugo-fixit/FixIt" target="_blank" rel="external" title="FixIt v0.3.9"><img class="fixit-icon" src="/images/fixit.min.svg" alt="FixIt logo" /> FixIt</a>
+        </div><div class="footer-line copyright" itemscope itemtype="http://schema.org/CreativeWork"><i class="fa-regular fa-copyright fa-fw" aria-hidden="true"></i>
+            <span itemprop="copyrightYear">2024</span><span class="author" itemprop="copyrightHolder">
+              <a href="/"></a></span></div></div>
+  </footer></div><div class="widgets"><div class="fixed-buttons animate__faster d-none"><div class="fixed-button back-to-top" role="button" aria-label="Back to Top"><i class="fa-solid fa-arrow-up fa-fw" aria-hidden="true"></i><span class="variant-numeric d-none">0%</span>
+        </div></div><div id="mask"></div><noscript>
+    <div class="noscript-warning">This website works best with JavaScript enabled.</div>
+  </noscript>
+</div><link rel="preload" href="/lib/katex/katex.min.css" as="style" onload="this.removeAttribute('onload');this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="/lib/katex/katex.min.css"></noscript><link rel="stylesheet" href="/lib/cookieconsent/cookieconsent.min.css"><script src="/lib/sharer/sharer.min.js" async defer></script><script src="/lib/katex/katex.min.js" defer></script><script src="/lib/katex/auto-render.min.js" defer></script><script src="/lib/katex/copy-tex.min.js" defer></script><script src="/lib/katex/mhchem.min.js" defer></script><script src="/lib/cookieconsent/cookieconsent.min.js" defer></script><script>window.config={"code":{"copyTitle":"Copy to clipboard","editLockTitle":"Lock editable code block","editUnLockTitle":"Unlock editable code block","editable":true,"maxShownLines":10},"comment":{"enable":false},"cookieconsent":{"content":{"dismiss":"Got it!","link":"Learn more","message":"This website uses Cookies to improve your experience."},"enable":true,"palette":{"button":{"background":"#f0f0f0"},"popup":{"background":"#1aa3ff"}},"theme":"edgeless"},"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":true,"left":"\\begin{equation}","right":"\\end{equation}"},{"display":true,"left":"\\begin{equation*}","right":"\\end{equation*}"},{"display":true,"left":"\\begin{align}","right":"\\end{align}"},{"display":true,"left":"\\begin{align*}","right":"\\end{align*}"},{"display":true,"left":"\\begin{alignat}","right":"\\end{alignat}"},{"display":true,"left":"\\begin{alignat*}","right":"\\end{alignat*}"},{"display":true,"left":"\\begin{gather}","right":"\\end{gather}"},{"display":true,"left":"\\begin{CD}","right":"\\end{CD}"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false},"version":"v0.3.9"};</script><script src="/js/theme.min.js" defer></script></body>
+</html>

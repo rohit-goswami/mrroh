@@ -1,22 +1,30 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
   <channel>
     <title>Categories - Category - MrUnomi</title>
-    <link>https://rohitgoswami.in/categories/</link>
+    <link>http://localhost:1313/categories/</link>
     <description>Categories - Category | MrUnomi</description>
-    <generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Fri, 02 Aug 2024 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://rohitgoswami.in/categories/" rel="self" type="application/rss+xml" /><item>
+    <generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sun, 25 Aug 2024 00:00:00 &#43;0000</lastBuildDate><atom:link href="http://localhost:1313/categories/" rel="self" type="application/rss+xml" /><item>
   <title>Tech</title>
-  <link>https://rohitgoswami.in/categories/tech/</link>
-  <pubDate>Fri, 02 Aug 2024 00:00:00 &#43;0000</pubDate>
+  <link>http://localhost:1313/categories/tech/</link>
+  <pubDate>Sun, 25 Aug 2024 00:00:00 &#43;0000</pubDate>
   <author>Author</author>
-  <guid>https://rohitgoswami.in/categories/tech/</guid>
+  <guid>http://localhost:1313/categories/tech/</guid>
   <description><![CDATA[]]></description>
 </item>
 <item>
   <title>Web3</title>
-  <link>https://rohitgoswami.in/categories/web3/</link>
-  <pubDate>Fri, 02 Aug 2024 00:00:00 &#43;0000</pubDate>
+  <link>http://localhost:1313/categories/web3/</link>
+  <pubDate>Sun, 25 Aug 2024 00:00:00 &#43;0000</pubDate>
   <author>Author</author>
-  <guid>https://rohitgoswami.in/categories/web3/</guid>
+  <guid>http://localhost:1313/categories/web3/</guid>
+  <description><![CDATA[]]></description>
+</item>
+<item>
+  <title>Zkp</title>
+  <link>http://localhost:1313/categories/zkp/</link>
+  <pubDate>Sun, 25 Aug 2024 00:00:00 &#43;0000</pubDate>
+  <author>Author</author>
+  <guid>http://localhost:1313/categories/zkp/</guid>
   <description><![CDATA[]]></description>
 </item>
 </channel>
