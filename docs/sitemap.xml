@@ -2,24 +2,24 @@
   xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml"
   ><url>
-      <loc>http://localhost:1313/categories/</loc><lastmod>2024-08-25T00:00:00&#43;00:00</lastmod></url><url>
-      <loc>http://localhost:1313/</loc><lastmod>2024-08-25T00:00:00&#43;00:00</lastmod></url><url>
-      <loc>http://localhost:1313/posts/</loc><lastmod>2024-08-25T00:00:00&#43;00:00</lastmod></url><url>
-      <loc>http://localhost:1313/tags/reclaim-protocol/</loc><lastmod>2024-08-25T00:00:00&#43;00:00</lastmod></url><url>
-      <loc>http://localhost:1313/tags/</loc><lastmod>2024-08-25T00:00:00&#43;00:00</lastmod></url><url>
-      <loc>http://localhost:1313/categories/tech/</loc><lastmod>2024-08-25T00:00:00&#43;00:00</lastmod></url><url>
-      <loc>http://localhost:1313/categories/web3/</loc><lastmod>2024-08-25T00:00:00&#43;00:00</lastmod></url><url>
-      <loc>http://localhost:1313/tags/zero-knowledge-proofs/</loc><lastmod>2024-08-25T00:00:00&#43;00:00</lastmod></url><url>
-      <loc>http://localhost:1313/tags/zkfetch/</loc><lastmod>2024-08-25T00:00:00&#43;00:00</lastmod></url><url>
-      <loc>http://localhost:1313/posts/zkfetch/</loc><lastmod>2024-08-25T00:00:00&#43;00:00</lastmod></url><url>
-      <loc>http://localhost:1313/categories/zkp/</loc><lastmod>2024-08-25T00:00:00&#43;00:00</lastmod></url><url>
-      <loc>http://localhost:1313/tags/consensus/</loc><lastmod>2024-08-02T00:00:00&#43;00:00</lastmod></url><url>
-      <loc>http://localhost:1313/posts/mysticeti/</loc><lastmod>2024-08-02T00:00:00&#43;00:00</lastmod></url><url>
-      <loc>http://localhost:1313/tags/sui/</loc><lastmod>2024-08-02T00:00:00&#43;00:00</lastmod></url><url>
-      <loc>http://localhost:1313/tags/did/</loc><lastmod>2024-07-29T00:00:00&#43;00:00</lastmod></url><url>
-      <loc>http://localhost:1313/tags/verified-credentials/</loc><lastmod>2024-07-29T00:00:00&#43;00:00</lastmod></url><url>
-      <loc>http://localhost:1313/posts/verifiedcredentials/</loc><lastmod>2024-07-29T00:00:00&#43;00:00</lastmod></url><url>
-      <loc>http://localhost:1313/tags/ethereum/</loc><lastmod>2023-01-14T16:09:02&#43;05:30</lastmod></url><url>
-      <loc>http://localhost:1313/tags/evm/</loc><lastmod>2023-01-14T16:09:02&#43;05:30</lastmod></url><url>
-      <loc>http://localhost:1313/posts/first/</loc><lastmod>2023-01-14T16:09:02&#43;05:30</lastmod></url><url>
-      <loc>http://localhost:1313/archives/</loc></url></urlset>
+      <loc>https://rohitgoswami.in/categories/</loc><lastmod>2024-08-25T00:00:00&#43;00:00</lastmod></url><url>
+      <loc>https://rohitgoswami.in/</loc><lastmod>2024-08-25T00:00:00&#43;00:00</lastmod></url><url>
+      <loc>https://rohitgoswami.in/posts/</loc><lastmod>2024-08-25T00:00:00&#43;00:00</lastmod></url><url>
+      <loc>https://rohitgoswami.in/tags/reclaim-protocol/</loc><lastmod>2024-08-25T00:00:00&#43;00:00</lastmod></url><url>
+      <loc>https://rohitgoswami.in/tags/</loc><lastmod>2024-08-25T00:00:00&#43;00:00</lastmod></url><url>
+      <loc>https://rohitgoswami.in/categories/tech/</loc><lastmod>2024-08-25T00:00:00&#43;00:00</lastmod></url><url>
+      <loc>https://rohitgoswami.in/categories/web3/</loc><lastmod>2024-08-25T00:00:00&#43;00:00</lastmod></url><url>
+      <loc>https://rohitgoswami.in/tags/zero-knowledge-proofs/</loc><lastmod>2024-08-25T00:00:00&#43;00:00</lastmod></url><url>
+      <loc>https://rohitgoswami.in/tags/zkfetch/</loc><lastmod>2024-08-25T00:00:00&#43;00:00</lastmod></url><url>
+      <loc>https://rohitgoswami.in/posts/zkfetch/</loc><lastmod>2024-08-25T00:00:00&#43;00:00</lastmod></url><url>
+      <loc>https://rohitgoswami.in/categories/zkp/</loc><lastmod>2024-08-25T00:00:00&#43;00:00</lastmod></url><url>
+      <loc>https://rohitgoswami.in/tags/consensus/</loc><lastmod>2024-08-02T00:00:00&#43;00:00</lastmod></url><url>
+      <loc>https://rohitgoswami.in/posts/mysticeti/</loc><lastmod>2024-08-02T00:00:00&#43;00:00</lastmod></url><url>
+      <loc>https://rohitgoswami.in/tags/sui/</loc><lastmod>2024-08-02T00:00:00&#43;00:00</lastmod></url><url>
+      <loc>https://rohitgoswami.in/tags/did/</loc><lastmod>2024-07-29T00:00:00&#43;00:00</lastmod></url><url>
+      <loc>https://rohitgoswami.in/tags/verified-credentials/</loc><lastmod>2024-07-29T00:00:00&#43;00:00</lastmod></url><url>
+      <loc>https://rohitgoswami.in/posts/verifiedcredentials/</loc><lastmod>2024-07-29T00:00:00&#43;00:00</lastmod></url><url>
+      <loc>https://rohitgoswami.in/tags/ethereum/</loc><lastmod>2023-01-14T16:09:02&#43;05:30</lastmod></url><url>
+      <loc>https://rohitgoswami.in/tags/evm/</loc><lastmod>2023-01-14T16:09:02&#43;05:30</lastmod></url><url>
+      <loc>https://rohitgoswami.in/posts/first/</loc><lastmod>2023-01-14T16:09:02&#43;05:30</lastmod></url><url>
+      <loc>https://rohitgoswami.in/archives/</loc></url></urlset>
