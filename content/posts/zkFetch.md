@@ -38,7 +38,7 @@ Let's explore each of these in detail.
 
 The ReclaimClient is the main class that users interact with. It's initialized with an application ID and secret, which are used to authenticate with the Reclaim Protocol.
 
-```typescript
+```
 export class ReclaimClient {
   applicationId: string;
   applicationSecret: string;
@@ -73,7 +73,7 @@ The zkFetch method is the core of the library. It performs the following steps:
 
 Here's a simplified version of the method:
 
-```typescript
+```
 async zkFetch(url: string, options?: Options, secretOptions?: secretOptions, retries = 1, retryInterval = 1000) {
   // Input validation
   validateURL(url, "zkFetch");
@@ -199,7 +199,7 @@ The library includes custom error classes to provide clear and specific error me
 
 While not part of the zkFetch library itself, the verification process is a crucial part of the overall system. Verification is typically done using the Reclaim Protocol's `verifySignedProof` function:
 
-```javascript
+```js {.no-header}
 const isProofVerified = await Reclaim.verifySignedProof(proof);
 ```
 
